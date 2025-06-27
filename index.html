@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anomaly Detection Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Anomaly Detection System</h1>
+
+    <div class="video-wrapper">
+      <video id="videoPlayer" controls></video>
+    </div>
+
+    <br><br>
+    <label class="custom-file-upload">
+      <input type="file" id="fileInput" accept="video/*" />
+      ---- Upload Video
+    </label>
+
+    <div id="alertBox">⚠️ Anomaly Detected!</div>
+
+    <div class="events">
+      <h2>Detected Events</h2>
+      <ul id="anomalyList"></ul>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
